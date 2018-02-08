@@ -1,0 +1,28 @@
+ext {
+    scalaVersion = '2.11'
+
+    commonsLang3Ver = '3.7'
+
+    log4jVer = '2.10.0'
+    slf4jVer = '1.7.25'
+
+    lazyJsonVer = '2.3.1'
+    aviatorVer = '3.3.0'
+    
+    kafkaVer = '0.9.0.1'
+
+    libraries = [
+        commonsLang3: "org.apache.commons:commons-lang3:${commonsLang3Ver}@jar",
+        lazyJson: "me.doubledutch:lazyjson:${lazyJsonVer}@jar",
+        aviator: "com.googlecode.aviator:aviator:${aviatorVer}@jar",
+
+        log4jCore: "org.apache.logging.log4j:log4j-core:${log4jVer}@jar",
+        log4jApi: "org.apache.logging.log4j:log4j-api:${log4jVer}@jar",
+        log4jSlf4jImpl: "org.apache.logging.log4j:log4j-slf4j-impl:${log4jVer}@jar",
+        slf4jApi: "org.slf4j:slf4j-api:${slf4jVer}@jar",
+        slf4jExt: "org.slf4j:slf4j-ext:${slf4jVer}@jar",
+
+        kafkaClients: "org.apache.kafka:kafka-clients:${kafkaVer}@jar"
+
+    ]
+}

@@ -1,0 +1,52 @@
+{
+  "topic": "dsp_notify",
+  "separator": ",",
+  "input_size": 3,
+  "input": {
+    "columns" : [
+      {
+        "name" : "req_id",
+        "type" : "String",
+        "index" : 0
+      },
+      {
+        "name" : "ip",
+        "type" : "String",
+        "index" : 1
+      },
+      {
+        "name" : "app_id",
+        "type" : "String",
+        "index" : 2
+      }
+    ]
+  },
+  "output": {
+    "columns" : [
+      {
+        "name" : "req_id",
+        "type" : "String",
+        "expresion" : "req_id",
+        "index" : 0
+      },
+      {
+        "name" : "ip",
+        "type" : "String",
+        "expresion" : "ip",
+        "index" : 1
+      },
+      {
+        "name" : "app_id",
+        "type" : "String",
+        "expresion" : "app_id",
+        "index" : 2
+      },
+      {
+        "name" : "city_id",
+        "type" : "String",
+        "expresion" : "ip",
+        "index" : 3
+      }
+    ]
+  }
+}
